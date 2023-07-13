@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+    --orange: #ff7800;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline0g: .1rem solid rgba(0, 0, 0, .1);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 40%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    display: grid;
+    align-content: center;
+    min-height: 100vh;
+}
+
+
+
+
+
+/*header start
+
+.header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.header .logo i {
+    color: var(--orange);
+}
+
+.header .navbar a {
+    font-size: 2rem;
+    margin: 0 1rem;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.header .navbar a:hover {
+    color: var(--orange);
+}
+
+.header .navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: var(--orange);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.header .navbar a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.header .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.header .btn:hover {
+    background: var(--orange);
+    color: #fff;
+}
+
+header end*/
+
+
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 75vh;
+    width: 95vw;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50px
+}
+
+/*image code */
+.image {
+    background-color: #ff7800;
+    display: grid;
+    border-radius: 12px 0 0 12px;
+}
+
+.image img {
+    height: 50vh;
+    margin: 70px auto;
+    border-radius: 20px
+}
+
+/*about us content*/
+.content {
+    background-color: #666;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 15px 12px 0;
+    color: #fff;
+}
+
+.content h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    padding-top: 5%;
+    letter-spacing: 6px;
+    opacity: 0.9;
+    color: #ff7800;
+}
+
+.content span {
+    height: 1.5px;
+    width: 300px;
+    background: #ff7800;
+    margin: 30px 0;
+}
+
+.content p {
+    padding-bottom: 15px;
+    font-weight: 300;
+    opacity: 0.7;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: #ffffff
+}
+
+
+.icons {
+    display: flex;
+    padding: 15px 0;
+}
+
+.icons li {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+
+.icons li a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    border-radius: .5rem;
+    font-size: 3rem;
+    color: #130f40;
+    margin-left: .2rem;
+    background: #eee;
+    text-align: center;
+}
+
+.icons li a:hover {
+    background: #ff7800;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*****************/
+
+@media(max-width: 900px) {
+    section {
+        grid-template-columns: 1fr;
+        width: 100%;
+        border-radius: none;
+    }
+
+    .image {
+        height: 100vh;
+        border-radius: none;
+    }
+
+    .content {
+        height: 100vh;
+        border-radius: none;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .content span {
+        margin: 20px 0;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .icons li a {
+        font-size: 15px;
+    }
+}
+
+.credit {
+    text-align: center;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.credit a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.policy {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 1rem;
+    color: var(--black);
+    border-top: var(--black);
+}
+
+.policy a {
+    color: var(--orange);
+}
